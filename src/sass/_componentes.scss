@@ -1,0 +1,31 @@
+.componente {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    width: 300px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    background: $softBlue;
+
+    @include desktop {
+        height: 260px;
+        width: 450px;
+    }
+}
+
+.componenteFeatures {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 300px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    background: $softBlue;
+
+    @include desktop {
+        height: 240px;
+        width: 550px;
+    }
+}

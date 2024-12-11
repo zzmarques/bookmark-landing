@@ -1,0 +1,85 @@
+main {
+    @include vw100vh100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+
+    @include desktop {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0
+    }
+
+    .containerImgMain {
+        @include center;
+        position: relative;
+        height: 300px;
+        width: 100%;
+
+        @include desktop {
+            height: 413px;
+            width: 600px;
+        }
+        
+        img {
+            position: relative;
+            top: 15px;
+            z-index: 888;
+            width: 350px;
+
+            @include desktop {
+                width: 540px;
+            }
+        }
+
+        
+    }
+
+    .containerTextMain {
+        width: 100%;
+        @include center;
+        gap: 20px;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 50px;
+
+        @include desktop {
+            width: 480px;
+            text-align: left;
+            align-items: flex-start;
+            margin: 0;
+            margin-left: 180px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            max-width: 290px;
+            color: $VeryDarkBlue;
+        }
+
+        p {
+            font-size: 16px;
+            color: $GrayishBlue;
+            line-height: 28px;
+            font-weight: 400;
+            max-width: 330px;
+
+            @include desktop {
+                max-width: 480px;
+            }
+        }
+    }
+
+    .containerBtns {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+
+        @include desktop {
+            justify-content: flex-start;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.btnChrome {
+    cursor: pointer;
+    height: 55px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: $softBlue;
+    border: 0;
+    border-radius: 8px;
+
+    &:hover {
+        background: #fff;
+        color: $softBlue;
+        border: 2px solid $softBlue;
+        transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    @include desktop {
+        width: 170px;
+    }
+}
+
+.btnFireFox {
+    @extend .btnChrome;
+    background: #f7f7f7;
+    color: $GrayishBlue;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+    &:hover {
+        background: #fff;
+        color: $VeryDarkBlue;
+        border: 2px solid $VeryDarkBlue;
+        transition: background-color 0.4s ease, color 0.4s ease;
+    }
+}
+
+.btnCard {
+    @extend .btnChrome;
+    width: 220px;
+    font-size: 15px;
+}
+
+.btnMore {
+    @extend .btnChrome;
+    width: 120px;
+    margin-top: 30px;
+}
+
+.btnContact {
+    @extend .btnChrome;
+    background: $softRed;
+    width: 100%;
+
+    &:hover {
+        background: #fff;
+        color: $softRed;
+        border: 2px solid $softRed;
+        transition: background-color 0.4s ease, color 0.4s ease;
+        
+    }
+
+    @include desktop {
+        width: 150px;
+    }
+} 
+
+.btnMoreFeatures {
+    @extend .btnChrome;
+    display: none;
+    width: 120px;
+
+    @include desktop {
+        display: block;
+    }
+}
+
+.btnLogin {
+
+    @include desktop {
+        cursor: pointer;
+        background: $softRed;
+        width: 110px;
+        height: 45px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        border: 0;
+        border-radius: 8px;
+    
+        &:hover {
+            background: #fff;
+            color: $softRed;
+            border: 2px solid $softRed;
+            transition: background-color 0.4s ease, color 0.4s ease;
+            
+    }
+    }
+    
+}

@@ -1,0 +1,18 @@
+
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin vw100vh100 {
+    width: 100%;
+    height: auto;
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}

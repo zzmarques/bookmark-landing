@@ -1,0 +1,84 @@
+.footer {
+    @include vw100vh100;
+    @include center;
+    gap: 35px;
+    flex-direction: column;
+    background: $VeryDarkBlue;
+    padding-block: 60px;
+
+    @include desktop {
+        justify-content: space-between;
+        flex-direction: row;
+        padding-block: 20px;
+    }
+
+    .containerFooter {
+        @include center;
+        flex-direction: column;
+        gap: 15px;
+
+        @include desktop {
+            flex-direction: row;
+            margin-left: 90px;
+        }
+
+        .containerLogoFooter {
+
+            img {
+                width: 200px;
+    
+                @include desktop {
+                    width: 150px;
+                }
+            }
+        }
+
+        .navBarFooter {
+            list-style: none;
+            @include center;
+            flex-direction: column;
+
+            @include desktop {
+                flex-direction: row;
+            }
+    
+            a {
+                text-decoration: none;
+                color: $GrayishBlue;
+                font-size: 25px;
+    
+                li {
+                    padding: 15px 25px;
+                }
+
+                &:hover {
+                    li {
+                        color: $softRed;
+                    }
+                }
+            }    
+        }
+    }
+
+    
+
+    
+
+    .socialMidia {
+        display: flex;
+        gap: 25px;
+
+        @include desktop {
+            margin-right: 90px;
+        }
+        
+        img {
+            cursor: pointer;
+            width: 35px;
+
+            @include desktop {
+                width: 25px;
+            }
+        }
+    }
+}

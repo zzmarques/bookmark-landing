@@ -1,0 +1,175 @@
+.containerFeatures {
+    @include center;
+    flex-direction: column;
+    gap:  30px;
+    @include vw100vh100;
+    padding: 30px 0px 90px 0px;
+
+    .featuresText1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+
+        
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $VeryDarkBlue;
+            max-width: 330px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $GrayishBlue;
+            max-width: 330px;
+
+            @include desktop {
+                max-width: 480px;
+            }
+        }
+    }
+
+
+    .featuresOption {
+        @include center;
+        flex-direction: column;
+        width: 80%;
+
+        @include desktop {
+            flex-direction: row;
+            width: 650px;
+            border-bottom: 1px solid $GrayishBlue;
+        }
+        
+        span {
+            color: $GrayishBlue;
+            font-weight: 400;
+        }
+
+        .sActive {
+            color: $VeryDarkBlue;
+           
+        }
+
+        .linha {
+            background: $GrayishBlue;
+            height: 1px;
+            width: 100%;
+
+            @include desktop {
+                display: none
+            }
+        }
+
+        .options {
+            cursor: pointer;
+            @include center;
+            height: 60px;
+            width: 100%;
+            color: $VeryDarkBlue;
+            @include desktop {
+                width: 220px;
+            }
+
+            &:hover {
+                span {
+                    color: $softRed;
+                }
+            }
+
+            
+        }     
+        
+        .active {
+            position: relative;
+    
+            .borderActive {
+                position: absolute;
+                bottom: -1px;
+                height: 3px;
+                width: 35%;
+                background: $softRed;
+
+                @include desktop {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .contentFeatures {
+        margin-top: 30px;
+        width: 100%;
+        
+        @include desktop {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .featuresFigure {
+            @include center;
+            position: relative;
+            height: 280px;
+            width: 100%;
+
+            @include desktop {
+                width: 650px;
+                height: 400px;
+            }
+            
+            img {
+                position: relative;
+                width: 300px;
+                z-index: 999;
+
+                @include desktop {
+                    width: 490px;
+                    left: 50px
+                }
+                
+            }
+        }
+
+        .featuresText2 {
+            @include center;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            margin-top: 60px;
+
+            @include desktop {
+                text-align: left;
+                align-items: flex-start;
+                height: 400px;
+                margin: 0;
+                margin-right: 150px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $VeryDarkBlue;
+                max-width: 330px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $GrayishBlue;
+                max-width: 330px;
+
+                @include desktop {
+                    max-width: 480px;
+                }
+            }
+        }
+    }
+}

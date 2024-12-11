@@ -1,0 +1,86 @@
+.containerQuestion {
+    @include center;
+    flex-direction: column;
+    gap: 20px;
+    @include vw100vh100;
+    padding: 40px 0px 80px 0px;
+
+    
+
+    .questionText {
+        @include center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $VeryDarkBlue;
+            max-width: 330px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $GrayishBlue;
+            max-width: 330px;
+
+            @include desktop {
+                max-width: 480px;
+            }
+        }
+    }
+
+    .questions {
+        width: 85%;
+        height: auto;
+
+        @include desktop {
+            width: 530px;
+        }
+
+        .containerQuestions {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid $GrayishBlue;
+
+            .fa-chevron-up {
+                color: $softRed;
+            }
+
+            .fa-chevron-down {
+                color: $softBlue;
+            }
+
+            .titleQuestion {
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-block: 20px;
+
+                &:hover {
+                    
+                    span {
+                        color: $softRed;
+                    }
+                }
+
+                span {
+                    color: $VeryDarkBlue;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+            p {
+                color:  $GrayishBlue;
+                padding-bottom: 20px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}

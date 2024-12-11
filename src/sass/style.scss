@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+@import 'buttons';
+@import 'componentes';
+@import 'header';
+@import 'main';
+@import 'section_features';
+@import 'section_extension';
+@import 'section_question';
+@import 'section_already';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    
+}
