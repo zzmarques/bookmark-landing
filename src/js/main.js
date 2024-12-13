@@ -6,7 +6,8 @@ window.addEventListener('resize', () => {
 });
 
 
-const menu = (() => {
+// Menu mobile
+(() => {
     const btnOpen = document.querySelector('div.hamb');
     const btnClose = document.querySelector('div.close');
     const navBar = document.querySelector('nav.navBar');
@@ -35,7 +36,8 @@ const menu = (() => {
 })();
 
 
-const question = (() => {
+// Questions
+(() => {
     const qts = document.querySelectorAll('div.containerQuestions');
     
 
@@ -82,7 +84,8 @@ const question = (() => {
     });
 })();
 
-const feature = (() => {
+// Alterção features
+(() => {
     const fts = document.querySelectorAll('div.options');
     const ftsText = document.querySelector('div.featuresText2');
     const ftsImg = document.querySelector('figure.featuresFigure img');
@@ -112,7 +115,8 @@ const feature = (() => {
 
 })();
 
-const valForm = (()=> {
+// Form validação
+(()=> {
     const inputEmail = document.querySelector('input#email');
     const btn = document.querySelector('button.btnContact');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

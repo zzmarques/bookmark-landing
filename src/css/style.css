@@ -562,7 +562,13 @@ main .containerBtns {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 50px;
   gap: 10px;
+}
+@media (min-width: 1024px) {
+  .containerExtension .extensionText {
+    margin: 0;
+  }
 }
 .containerExtension .extensionText h1 {
   font-size: 1.4rem;
